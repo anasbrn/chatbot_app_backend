@@ -23,7 +23,7 @@ public class FewShotPromtingAIController {
                 .build();
     }
 
-    @GetMapping("generateText/chat")
+    @GetMapping("generateText/fewShotPrompting/chat")
     public String chat(String text) {
         List<Message> messages = List.of(
                 new UserMessage("I'm a software engineer"),
